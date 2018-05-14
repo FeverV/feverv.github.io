@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+  }
+
+  .w3-half img:hover {
+    opacity: 1
+  }
+</style>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class=" sidebar w3-collapse w3-top w3-large w3-padding " style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <img src="img\html_css_github.png" class="image">
+    </div>
+    <div class="text-navigation" style="align:center;">
+      <br>
+      <hr>
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-white">INICIO</a><br>
+      <a href="lecturas.html" class="w3-bar-item w3-button w3-hover-white">LECTURAS</a><br>
+      <a href="multimedia.html" class="w3-bar-item w3-button w3-hover-white">MULTIMEDIA</a><br>
+      <a href="actividades.html" class="w3-bar-item w3-button w3-hover-white">ACTIVIDADES</a><br>
+      <a href="autores.html" class="w3-bar-item w3-button w3-hover-white">AUTORES</a><br>
+    </div>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:2%" id="showcase">
+      <div class="w3-row">
+        <div class="w3-quarter">
+          <img src="img\html.png" style="border-radius:50%; border: 10px solid #004669; width: 80%;">
+        </div>
+
+        <div class="w3-third">
+          <h1 class="w3-jumbo"><b>HTML5</b></h1>
+          <h1 class="w3-xxxlarge" style="color:#e26c0e;"><b>Guía Básica</b></h1>
+          <hr style="width:50px;border:5px solid #004669;" class="w3-round">
+        </div>
+        <div class="w3-rest">
+          <img src="img\logoUNAD.png" style=" width: 100%;">
+        </div>
+      </div>
+      <hr>
+
+      <p class="p">
+        El HTML5 (HyperText Markup Language, versión 5) es la quinta revisión del lenguaje de programación “básico” de la World Wide Web, el HTML. Esta nueva versión pretende remplazar al actual (X)HTML, corrigiendo problemas con los que los desarrolladores web
+        se encuentran, así como rediseñar el código actualizandolo a nuevas necesidades que demanda la web de hoy en día. 
+        
+      </p>
+     
+      <div class="w3-row">
+        <div class="w3-half">
+          <i>Direfencias entre html y html5:</i>
+          <div style="width:88%;" class="p-reference">
+            <img src="img\novedades-en-html5.gif" style="width:100%"> dgcomunicacion.com - 2016 - novedades-en-html5 - Ilustración - Recuperado de: http://www.dgcomunicacion.com/articulo/ultimas-novedades-en-html5-el-nuevo-reemplazo-del-actual-xhtml
+          </div>
+        </div>
+        <div class="w3-half">
+          <p class="p">
+            HTML5 sigue en borrador y lo seguirá durante algunos años más. El enfoque general ha cambiado bastante respecto a versiones anteriores de HTML, añadiendo semántica y accesibilidad implícitas, especificando cada detalle . Algo básico es que HTML5 está
+            definido en base al DOM (la representación interna de una web con la que trabaja un navegador), dejando de lado la representación “real”, definiendo a la vez un estándar HTML y XHTML.
+          </p>
+          
+            <p class="p">
+            El HTML5 (HyperText Markup Language, versión 5) es la quinta revisión del lenguaje de programación “básico” de la World Wide Web, el HTML. Esta nueva versión pretende remplazar al actual (X)HTML, corrigiendo problemas con los que los desarrolladores web se encuentran, así como rediseñar el código actualizandolo a nuevas necesidades que demanda la web de hoy en día.
+          </p>
+          
+          <p class="p">
+            En HTML5 hay varios elementos que sirven para estructurar mejor una página web, estableciendo qué es cada sección, y reemplazando en muchas ocasiones a div. Con este extra de semántica, será mucho más coherente y fácil de entender por otras personas.
+            Y lo que es más importante, será trivial de entender para una máquina, dándole más importancia a unas secciones y pudiendo jugar con esos datos automáticamente. Concretamente, la tarea de un buscador será mucho más fácil, pero cualquier aplicación
+            que “lea” páginas web se beneficiará. Estos son los elementos:
+          </p>
+        </div>
+      </div>
+      <p class="p">
+        <ul>
+          <li><b> Section:</b> representa una sección “general” dentro de un documento o aplicación, comoun capítulo de un libro. Puede contener subsecciones y si lo acompañamos de h1-h6 podemos estructurar mejor toda la página.</li>
+          <li><b>Article:</b> representa un contenido independiente en un documento, el caso más claro son las entradas de un blog o las noticias de un periódico online. Así, dentro de la portada podremos tener varios artículos demarcados semánticamente,
+            por lo que una herramienta puede extraerlos fácilmente.</li>
+          <li><b>Aside:</b> representa un contenido que está muy poco relacionado con el resto de la página, como una barra lateral. Esencial para delimitar el contenido “importante” del contenido “de apoyo”, haciendo más caso al primero que al segundo.</li>
+          <li><b>Header:</b> representa la cabecera de una sección, y es de suponer que se le dé más importancia que al resto, sobre todo si la sección es un artículo.</li>
+          <li><b>Footer:</b> representa el pié de una sección, con información acerca de la página/sección que poco tiene que ver con el contenido de la página, como el autor, el copyright o el año.</li>
+          <li><b>nav:</b> representa una sección dedicada a la navegación entre el sitio, como la típica barra superior de los periódicos.</li>
+          Para ver toda la información sobre las caracteristicas de HTML5 y diferencias con HTML ingrese a: <a href="http://www.dgcomunicacion.com/articulo/ultimas-novedades-en-html5-el-nuevo-reemplazo-del-actual-xhtml" target="_blank"> www.dgcomunicacion.com</a>
+        </ul>
+      </p>
+      <hr>
+    </div>
+
+    <div>
+      <p class="p">
+        Aqui dejamos un manual donde podemos leer el Capítulo 1, para afianzar nuestros conocimientos en HTML5:
+      </p>
+      <iframe src=" manual.pdf" width="100%" height="600px"></iframe>
+      <p class="p-reference">
+        gutl.jovenclub.cu - 2013 - El+gran+libro+de+HTML5+CSS3+y+Javascrip - documento PDF - Recuperado de: https://gutl.jovenclub.cu/wp-content/uploads/2013/10/El+gran+libro+de+HTML5+CSS3+y+Javascrip.pdf
+      </p>
+    </div>
+    <p class="p">
+
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </div>
+</body>
+
+</html>

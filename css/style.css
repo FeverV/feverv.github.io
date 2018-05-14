@@ -1,0 +1,37 @@
+.sidebar {
+  background-color: #e26c0e;
+  height: 100%;
+  color: white;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
+}
+
+.image {
+  border-radius: 40%;
+  width: 100%;
+  border: 5px solid #ddd;
+}
+
+.text-navigation{
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: center;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+.details{
+   height: 250;
+}
+.p{
+  text-align: justify;
+  font-size: 18;
+}
+.p-reference{
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia;
+  text-align: justify;
+  font-size: 15;
+}

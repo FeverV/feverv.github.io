@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+  }
+
+  .w3-half img:hover {
+    opacity: 1
+  }
+</style>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class=" sidebar w3-collapse w3-top w3-large w3-padding " style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <img src="img\html_css_github.png" class="image">
+    </div>
+    <div class="text-navigation" style="align:center;">
+      <br>
+      <hr>
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-white">INICIO</a><br>
+      <a href="lecturas.html" class="w3-bar-item w3-button w3-hover-white">LECTURAS</a><br>
+      <a href="multimedia.html" class="w3-bar-item w3-button w3-hover-white">MULTIMEDIA</a><br>
+      <a href="actividades.html" class="w3-bar-item w3-button w3-hover-white">ACTIVIDADES</a><br>
+      <a href="autores.html" class="w3-bar-item w3-button w3-hover-white">AUTORES</a><br>
+    </div>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:2%" id="showcase">
+      <div class="w3-row">
+        <div class="w3-quarter">
+          <img src="img\css3.png" style="border-radius:50%; border: 10px solid #004669; width: 80%;">
+        </div>
+
+        <div class="w3-third">
+          <h1 class="w3-jumbo"><b>CSS3</b></h1>
+          <h1 class="w3-xxxlarge" style="color:#e26c0e;"><b>Guía Básica</b></h1>
+          <hr style="width:50px;border:5px solid #004669;" class="w3-round">
+        </div>
+        <div class="w3-rest">
+          <img src="img\logoUNAD.png" style=" width: 100%;">
+        </div>
+      </div>
+      <hr>
+      <p class="p">
+        Es uno de los lenguajes base de la Open Web y posee una especificación estandarizada por parte del W3C. Desarrollado en niveles, CSS1 es ahora obsoleto, CSS2.1 es una recomendación y CSS3, ahora dividido en módulos más pequeños, está progresando en camino
+        al estándar. CSS sirve para dar estilo y diseño a las páginas web — cambiar de tipo de letra, color, tamaño y espaciado del contenido, mostrar multiples columnas, añadir animaciones y otras funcionalidades. Este módulo nos introducirá en el dominio
+        de las reglas básicas de CSS, selectores, propiedades, reglas de escritura de CSS, aplicación de CSS a HTML, introducción de medidas, color y otras unidades en CSS, cascadas y herencias; y depuración de CSS.
+      </p>
+      <p class="p">
+      <h3>¿Como afecta CSS a un HTML</h3>
+      Los navegadores Web, al aplicar las reglas CSS a un documento, modifican la manera en que este es presentado. Una regla CSS se compone de:
+      <ul>
+        <li>Un conjunto de propiedades (properties), con valores establecidos para actualizar la presentación del contenido HTML, por ejemplo quiero que el ancho de un elemento sea el 50% de su elemento padre, y que su fondo sea rojo. </li>
+        <li>Un selector, que seleccionará los elementos afectados por el nuevo valor de la propiedad. Por ejemplo, quiero que mi regla CSS afecte a todos los párrafos (p) de mi documento HTML.  </li>
+      </ul>
+      El conjunto de reglas CSS contenidas en el documento de estilos (stylesheet) afectará a la presentación de la página web. Profundizaremos en la sintaxis CSS en el siguiente artículo del módulo — Sintaxis CSS.
+      </p>
+
+    </div>
+  </div>
+</body>
+
+</html>
