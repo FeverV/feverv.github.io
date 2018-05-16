@@ -35,3 +35,20 @@
   text-align: justify;
   font-size: 15;
 }
+.pre2 {
+    overflow: auto;
+    font-family: monospace,monospace;
+    border: 1px solid #999;
+    page-break-inside: avoid;
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+    margin: 12px 0 10px;
+    font-size: 12px;
+    line-height: 1.4em;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+          }

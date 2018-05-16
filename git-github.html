@@ -39,28 +39,29 @@
     <div class="w3-container">
       <img src="img\html_css_github.png" class="image">
     </div>
-    <div class="text-navigation" style="align:center;">
-      <br>
-      <hr>
-      <a href="index.html" class="w3-bar-item w3-button w3-hover-white">INICIO</a><br>
-      <a href="lecturas.html" class="w3-bar-item w3-button w3-hover-white">LECTURAS</a><br>
-      <a href="multimedia.html" class="w3-bar-item w3-button w3-hover-white">MULTIMEDIA</a><br>
-      <a href="actividades.html" class="w3-bar-item w3-button w3-hover-white">ACTIVIDADES</a><br>
-      <a href="autores.html" class="w3-bar-item w3-button w3-hover-white">AUTORES</a><br>
-    </div>
+      <div class="text-navigation" style="align:center;">
+        <br>
+        <hr>
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-white">INICIO</a><br>
+        <a href="lecturas.html" class="w3-bar-item w3-button w3-hover-white">LECTURAS</a><br>
+        <a href="multimedia.html" class="w3-bar-item w3-button w3-hover-white">MULTIMEDIA</a><br>
+        <a href="actividades.html" class="w3-bar-item w3-button w3-hover-white">ACTIVIDADES</a><br>
+        <a href="autores.html" class="w3-bar-item w3-button w3-hover-white">AUTORES</a><br>
+      </div>
   </nav>
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
     <!-- Header -->
     <div class="w3-container" style="margin-top:2%" id="showcase">
+
       <div class="w3-row">
         <div class="w3-quarter">
           <img src="img\github.png" style="border-radius:50%; border: 10px solid #004669; width: 80%;">
-        </div> 
+        </div>
 
         <div class="w3-third">
-          <h1 class="w3-xxxlarge"  ><b>GIT y GITHUB</b></h1>
+          <h1 class="w3-xxxlarge"><b>GIT y GITHUB</b></h1>
           <h1 class="w3-xxxlarge" style="color:#e26c0e;"><b>Guía Básica</b></h1>
           <hr style="width:50px;border:5px solid #004669;" class="w3-round">
         </div>
@@ -69,7 +70,62 @@
         </div>
       </div>
       <hr>
+
+      <p class="p">
+        <h3><b>¿Qué es GitHub?</b></h3>
+        GitHub es una plataforma de desarrollo colaborativo de software para alojar proyectos utilizando el sistema de control de versiones Git. El código se almacena de forma pública, aunque también se puede hacer de forma privada, creando una cuenta de pago.
+      </p>
+
+      <p class="p">
+        <h3><b>¿Para qué sirve?</b></h3>
+        GitHub aloja tu repositorio de código y te brinda herramientas muy útiles para el trabajo en equipo, dentro de un proyecto. Además de eso, puedes contribuir a mejorar el software de los demás. Para poder alcanzar esta meta, GitHub provee de funcionalidades
+        para hacer un fork y solicitar pulls.
+      </p>
+
+      <p class="p">
+        <h3><b>¿Qué uso le daremos?</b></h3>
+        En nuestra especialidad "Programación", fuimos aprendiendo cosas y creando programas de código abierto, fomentando el software libre; es por eso que presentamos esta gran herramienta enfocada al crecimiento de proyectos comunitarios y libres. En esta
+        página podremos crear una cuenta gratuita y comenzar a subir repositorios de código (o crearlos desde 0), para que con la ayuda de todos ese proyecto mejore; así como también fortalecer los proyectos de los demás para crecer como grupo.
+      </p>
+
+      <p class="p">
+        <h3><b>Instalación de GIT</b></h3>
+        En GNU/Linux, tan solo hay que instalar git-core:<br> apt-get install git-core<br> En Mac se puede instalar el instalador gráfico de git y en Windows, git for Windows. Para usar git desde la terminal en Mac hay que activar las funciones de Xcode.
+        Si queremos disfrutar de una terminal potente, podríamos usar Cygwin en Windows o la Terminal en Mac.<br>
+        <br>También tenemos los instaladores oficiales de git: <br> Mac, <a href="http://www.git-scm.com/download/mac" target="_blank"> http://www.git-scm.com/download/mac</a><br> Windows,
+        <a href="http://www.git-scm.com/download/win" target="_blank">http://www.git-scm.com/download/win </a><br>
+      </p>
+
+      <p class="p">
+        <h3><b>GITHUB</b></h3>
+        Crea una cuenta en <a href="https://github.com/join?source=header-home" target="_blank"> GITHUB</a> Configuración: <br> La primera vez que usas Git te pedirá tu nombre de usuario y dirección de correo. Lo podemos agregar con el comando config.
+        <br> Añado el nombre de la cuenta, en este caso el nombre de usuarix en GitHub:<br> git config --global user.name "Nombre_de_Usuario"<br> Añado la dirección de correo electrónico:<br> git config --global user.email "usuarix@dominio"<br> Cuando
+        hagamos luego git push, nos pedirá el usuario y contraseña por https:<br> Username for 'https://github.com': usuario<br> Password for 'https://usuarix@github.com': <br>
+        <h4>Crear un repositorio:</h4>
+        Podemos iniciar el proyecto git en un directorio cualquiera, ya creado, o bien crearlo en uno nuevo.<br> Si queremos crearlo en uno nuevo, iniciamos el repositorio con la opción init seguida del nombre del directorio:<br> git init nombre_repo<br>
+
+        <h4>Pasarlo a GitHub</h4>
+        Para que el repositorio o proyecto también esté en GitHub, vamos a Github y creamos un proyecto nuevo que llamamos con el nombre del directorio que hemos creado o del directorio que ya existía. No marques la opción Initialize with README y tampoco le
+        asignes licencia, vamos a crear un repositorio vacío para que nos sea más fácil realizar el primer push.<br>
+        Conectamos el directorio local donde nos encontramos con GitHub de la siguiente manera:<br>
+        git remote add origin https://github.com/tu_nombre_usuario/primera-newsapp.git:
+        Hemos de crear al menos un archivo README.md donde puedes poner la información del proyecto:<br>
+        echo "# Otro proyecto ni más ni menos" >> README.md<br>
+        Añadimos el archivo a git: git add README.md<br>
+        Lo comiteamos:<br>
+        git commit -m "mi primer commit"<br>
+        Y lo subimos a GitHub:<br>
+        git push -u origin master<br>
+        <br>
+         <br>
+     </p>
+          Con éste tutorial hemos realizado el procedimiento básico para poder descargar, instalar, y configurar GIT y GITHUB
+<br>
+<br>
+<br>
+<br>
     </div>
+
   </div>
 </body>
 

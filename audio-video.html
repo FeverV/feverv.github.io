@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+  }
+
+  .w3-half img:hover {
+    opacity: 1
+  }
+</style>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class=" sidebar w3-collapse w3-top w3-large w3-padding " style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <img src="img\html_css_github.png" class="image">
+    </div>
+    <div class="text-navigation" style="align:center;">
+      <br>
+      <hr>
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-white">INICIO</a><br>
+      <a href="lecturas.html" class="w3-bar-item w3-button w3-hover-white">LECTURAS</a><br>
+      <a href="multimedia.html" class="w3-bar-item w3-button w3-hover-white">MULTIMEDIA</a><br>
+      <a href="actividades.html" class="w3-bar-item w3-button w3-hover-white">ACTIVIDADES</a><br>
+      <a href="autores.html" class="w3-bar-item w3-button w3-hover-white">AUTORES</a><br>
+    </div>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:2%" id="showcase">
+
+      <div class="w3-row">
+        <div class="w3-quarter">
+          <img src="img\github.png" style="border-radius:50%; border: 10px solid #004669; width: 80%;">
+        </div>
+
+        <div class="w3-third">
+          <h1 class="w3-xxlarge"><b>AUDIO - VIDEO</b></h1>
+          <h1 class="w3-xxlarge" style="color:#e26c0e;"><b>Guía Básica</b></h1>
+          <hr style="width:50px;border:5px solid #004669;" class="w3-round">
+        </div>
+        <div class="w3-rest">
+          <img src="img\logoUNAD.png" style=" width: 100%;">
+        </div>
+      </div>
+      <hr>
+      <div class="w3-row">
+        <div class="w3-half" style="border-right: 2px solid #005883; padding-right:15px;">
+          <p class="p">
+            <h3><b>HTML - Audio</b> </h3>
+            Hace algún tiempo era bastante complicado insertar música o sonidos en una página web. Ahora, ese problema está resuelto, agregar sonidos es bastante simple.
+          </p>
+
+          <div class="w3-card-2">
+            <pre class="pre2">
+  &lt;embed height="60" type="audio/midi" width="144" src="audio.mp3" volume="60" loop="false" autostart="false"/&gt; </pre>
+          </div>
+
+          <p class="p">
+            Es recomendable que ambos height y width sean directamente proporcionales para evitar problemas. Para esconder el reproductor el valor del atributo hidden(que de momento es false) será reemplazado por true. Esto se hace si estás absolutamente seguro de
+            que el usuario no deseará detener el sonido.
+          </p>
+
+          <h4> Controlar y manipular el reproductor</h4>
+          <p class="p">
+            Teniendo como ejemplo el codigo anterior, podemos ejecutar los siguientes parametros para su controlamiento:<br>
+            <ul>
+              <li><b>autostart :</b> establece si el sonido empezará automáticamente después de que la página web haya cargado. Puede tener el valor turo o false.</li>
+              <li><b>loop :</b> establece si el sonido se reproducirá siempre. Puede tener el valor true o false.</li>
+              <li><b>volume :</b> puede tener cualquier valor entre 1 y 100.</li>
+            </ul>
+            Puedes jugar un poco con estos atributos para memorizarlos y entenderlos mejor, y además saber que un volumen demasiado alto puede ser molesto para el usuario.
+          </p>
+          <h4>HTML 5 Audio tag</h4>
+          <p class="p">
+            Una vez introducida, la etiqueta HTML5 audio se ha propagado rápidamente y tiene muy buen soporte en los navegadores actuales. La etiqueta audio se utiliza para añadir sonido en la página HTML. De momento la etiqueta audio, soporta 3 tipos de archivos
+            de audio:<br>
+            <ul>
+              <li>mp3 - MIME-type audio/mpeg</li>
+              <li>wav - MIME-type audio/wav</li>
+              <li>ogg - MIME-type audio/ogg</li>
+            </ul>
+          </p>
+          <div class="w3-card-2">
+            <pre class="pre2">
+&lt;audio controls&gt;
+  &lt;source src="/assets_tutorials/media/Loreena_Mckennitt_Snow_56bit.wav" type="audio/wav"&gt;
+  &lt;source src="/assets_tutorials/media/Loreena_Mckennitt_Snow_56bit.mp3" type="audio/mpeg"&gt;
+  &lt;source src="/assets_tutorials/media/Loreena_Mckennitt_Snow_56bit.ogg" type="audio/ogg"&gt;
+&lt;/audio &gt; </pre>
+          </div>
+
+          <b>Demo :</b>
+          <div class="w3-card-2" width="100%">
+            <audio controls><source src="mp3/prueba_sonido.mp3" type="audio/mp3"></audio>
+          </div>
+          <br>
+          <br> Hay que tener en cuenta la siguiente tabla que muestra la compatibilidad del audio en los navegadores:
+
+          <table class="w3-table w3-striped w3-bordered">
+            <tr>
+              <th>Browser</th>
+              <th>Mp3</th>
+              <th>Wav</th>
+              <th>Ogg</th>
+            </tr>
+
+            <tr>
+              <td>Internet Explorer</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">clear</i></td>
+              <td><i class="material-icons">clear</i></td>
+            </tr>
+
+            <tr>
+              <td>Chrome</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+            </tr>
+
+            <tr>
+              <td>Firefox</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+            </tr>
+
+            <tr>
+              <td>Safari</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">clear</i></td>
+            </tr>
+
+            <tr>
+              <td>Opera</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="w3-half" style="padding-left:15px;">
+          <p class="p">
+            <h3><b>HTML - Video</b> </h3>
+            Con la introducción del HTML5, el uso de la etiqueta video se ha extendido muy rápidamente con un buen soporte por parte de los navegadores modernos. La etiqueta de vídeo se utiliza para añadir un vídeo a la página HTML. De momento la etiqueta video de
+            HTML5, tiene soporte para 3 tipos de archivos de vídeo:
+          </p>
+          <ul>
+            <li>mp4 - MIME-type video/mp4</li>
+            <li>webm - MIME-type video/webm</li>
+            <li>ogg - MIME-type video/ogg</li>
+          </ul>
+
+          <div class="w3-card-2">
+            <pre class="pre2">
+  &lt;video width="320" height="240" controls&gt; 
+    &lt;source src="/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.mp4" type="video/mp4"&gt;
+    &lt;source src="/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.ogg" type="video/ogg"&gt;
+  &lt;/video&gt;</pre>
+          </div>
+          <br> Demo:
+          <i>Shaun the Sheep the Movie Official Trailer</i>
+          <div class="w3-card-2">
+            <video width="100%" controls>
+                <source src="mp3/prueba_video.mp4" type="video/mp4">
+                 Your browser does not support the video tag.
+              </video>
+          </div>
+          <hr> Para insertar un video de Youtube seguimos la etiqueta iframe, asi:
+          <div class="w3-card-2">
+            <pre class="pre2">
+&lt;iframe  width="425" height="344" src="https://www.youtube.com/embed/F9Bo89m2f6g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</pre>
+          </div>
+  Demo: 
+  <iframe  width="100%" height="250px:" src="https://www.youtube.com/embed/F9Bo89m2f6g" frameborder="0" allowfullscreen></iframe>
+          <hr> 
+  Compatibilidad de video en los navegadores:
+          <table class="w3-table w3-striped w3-bordered">
+            <tr>
+              <th>Browser</th>
+              <th>Mp4</th>
+              <th>WebM</th>
+              <th>Ogg</th>
+            </tr>
+
+            <tr>
+              <td>Internet Explorer</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">clear</i></td>
+              <td><i class="material-icons">clear</i></td>
+            </tr>
+
+            <tr>
+              <td>Chrome</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+            </tr>
+
+            <tr>
+              <td>Firefox</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+            </tr>
+
+            <tr>
+              <td>Safari</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">clear</i></td>
+              <td><i class="material-icons">clear</i></td>
+            </tr>
+
+            <tr>
+              <td>Opera</td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+              <td><i class="material-icons">done</i></td>
+            </tr>
+
+          </table>
+
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
