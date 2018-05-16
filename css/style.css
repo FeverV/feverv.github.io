@@ -30,6 +30,10 @@
   text-align: justify;
   font-size: 18;
 }
+.p-h8{
+  text-align: center;
+  font-size: 10px;
+}
 .p-reference{
   font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia;
   text-align: justify;
@@ -53,3 +57,12 @@
     border: 1px solid #ccc;
   
           }
+.bar-blue{
+    color: #fff!important;
+    background-color: #005883!important;
+}
+
+.bar-orange{
+  color: #fff!important;
+    background-color: #F47920!important;
+}
