@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,43 +33,89 @@ DOCTYPE html>
 
 <body>
 
-  <!-- Sidebar/menu -->
-  <nav class=" sidebar w3-collapse w3-top w3-large w3-padding " style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-    <div class="w3-container">
-      <img src="img\html_css_github.png" class="image">
-    </div>
-    <div class="text-navigation" style="align:center;">
-      <br>
-      <hr>
-      <a href="index.html" class="w3-bar-item w3-button w3-hover-white">INICIO</a><br>
-      <a href="lecturas.html" class="w3-bar-item w3-button w3-hover-white">LECTURAS</a><br>
-      <a href="multimedia.html" class="w3-bar-item w3-button w3-hover-white">MULTIMEDIA</a><br>
-      <a href="actividades.html" class="w3-bar-item w3-button w3-hover-white">ACTIVIDADES</a><br>
-      <a href="autores.html" class="w3-bar-item w3-button w3-hover-white">AUTORES</a><br>
-    </div>
-  </nav>
+    <!-- Sidebar/menu -->
+    <nav class=" sidebar w3-collapse w3-top w3-large w3-padding " style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+			<img src="img\html_css_github.png" class="image">
+        </div>
+        <div class="text-navigation" style="align:center;">
+            <br>
+            <hr>
+            <a href="index.html" class="w3-bar-item w3-button w3-hover-white">INICIO</a><br>
+            <a href="lecturas.html" class="w3-bar-item w3-button w3-hover-white">LECTURAS</a><br>
+            <a href="multimedia.html" class="w3-bar-item w3-button w3-hover-white">MULTIMEDIA</a><br>
+            <a href="actividades.html" class="w3-bar-item w3-button w3-hover-white">ACTIVIDADES</a><br>
+            <a href="autores.html" class="w3-bar-item w3-button w3-hover-white">AUTORES</a><br>
+        </div>
+    </nav>
 
  
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
-    <!-- Header -->
-    <div class="w3-container" style="margin-top:5px" id="showcase">
-      
-      <div class="w3-row">
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:5px" id="showcase">
         
-        <div class="w3-half">
-          <h1 class="w3-jumbo"><b>Multimedia</b></h1>
-          <hr style="width:50px;border:5px solid #004669" class="w3-round">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <h1 class="w3-jumbo"><b>Multimedia</b></h1>
+                    <hr style="width:50px;border:5px solid #004669" class="w3-round">
+                </div>
+                
+                <div class="w3-half" >
+                	<img src="img\logoUNAD.png" width="400" >
+                </div>
+                
+                
+                <div class="w3-row-padding" width="50%">
+                    <h2 ><b>Contenido:</b></h2>
+                
+                    <div class="w3-col" style="width:33%">
+                        <div class="w3-card-4" style="background-color: #e0e0e0 ;">
+                            <header class="w3-container" style="background-color: #004669; color: white;">
+                            <h2 style="text-align: center;">YOUTUBE</h2>
+                            </header>
+                            <img src="img\youtube.png" align="center" style="width: 100%; border-radius: 50%;">
+                            <div class="w3-container w3-white" style="height:225px;">
+                                <p>Contenido multimedia didactico que permite al estudiante hacer que el proceso de aprendizaje se haga de una forma mas practica. Aprendiendo a implementar el control de versiones GIT y GITHUB.</p>
+                            </div>
+                            <a href="javascript.html"><button  class="w3-button w3-block" style="background-color:#e26c0e; color:white;">Conocer más</button></a>
+                        </div>
+                    </div>
+                    
+                     <div class="w3-col" style="width:33%">
+                        <div class="w3-card-4" style="background-color: #e0e0e0 ;">
+                            <header class="w3-container" style="background-color: #004669; color: white;">
+                                <h2 style="text-align: center;">PODCAST</h2>
+                            </header>
+                            <img src="img\audio-video.png" align="center" style="width: 100%; border-radius: 50%;">
+                            <div class="w3-container w3-white" style="height:225px;">
+                                <p>Contenido multimedia de apoyo para el aprendizaje de conceptos basicos en HTML5 para la estructura de paginas web y creación de hojas con estilos CSS para el diseño de estas.</p>
+                            </div>
+                            <a href="audio-video.html"><button  class="w3-button w3-block" style="background-color:#e26c0e; color:white;">Conocer más</button></a>
+                        </div>
+                    </div>
+                    
+                     <div class="w3-col" style="width:33%">
+                        <div class="w3-card-4" style="background-color: #e0e0e0 ;">
+                            <header class="w3-container" style="background-color: #004669; color: white;">
+                                <h2 style="text-align: center;">INSTITUCIONAL</h2>
+                            </header>
+                            
+                   			<div class="w3-container w3-white" style="height:550px;">
+	                            <a class="twitter-timeline" data-width="280" data-height="545" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <br>
+                <br>
+            </div>
         </div>
-        
-        <div class="w3-half" >
-          <img src="img\logoUNAD.png" width="400" >
-        </div>
-
-      </div>
-
     </div>
-  </div>
+  
+  
 </body>
 </html>
