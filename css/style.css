@@ -66,22 +66,10 @@
   color: #fff!important;
     background-color: #F47920!important;
 }
-ul li{
-  display: block; 
-  padding: 0px 0px;
+nav div ul li{
+  display: block;  
+}
+
+nav div ul li a{
   text-decoration: none;
 }
-
-nav ul li div {
-  width:1000px;
-  position: absolute;
-  background:#ccc;
-  box-sizing:border-box;
-  display:list-item;
-}
-
-nav li a{
-  text-decoration: none;
-
-}
-
